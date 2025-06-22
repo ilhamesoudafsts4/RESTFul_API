@@ -1,0 +1,117 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+input[type="text"],
+input[type="datetime-local"] {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+input[type="text"] {
+  flex: 1;
+  min-width: 180px;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+label {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.comment {
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+
+.comment:last-child {
+  border-bottom: none;
+}
+
+.comment .text {
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.comment .meta {
+  font-size: 13px;
+  color: #777;
+}
+
+.positive {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.negative {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.empty {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .search-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  button {
+    width: 100%;
+  }
+}

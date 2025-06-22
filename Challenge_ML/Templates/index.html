@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feddit Comments Viewer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <h1>Feddit Comments Viewer</h1>
+  <div class="container">
+    <div class="search-bar">
+      <input type="text" id="subfedditInput" placeholder="Enter subfeddit name (e.g. technology)">
+      <input type="datetime-local" id="startInput" />
+      <input type="datetime-local" id="endInput" />
+      <label>
+        <input type="checkbox" id="sortCheckbox" /> Sort by polarity
+      </label>
+      <button onclick="fetchComments()">Fetch</button>
+    </div>
+
+    <div id="commentsContainer"></div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
