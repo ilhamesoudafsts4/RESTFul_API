@@ -5,7 +5,7 @@ from sentiment import analyze_sentiment     # Custom function to analyze the sen
 from datetime import datetime               # For parsing and formatting date and time
 
 # Initialize the Flask application and specify the folder containing HTML templates
-app = Flask(__name__, template_folder="templates")
+app = Flask(__name__, template_folder="Templates")
 
 # Define a route to handle GET requests for comments
 @app.route("/comments", methods=["GET"])
