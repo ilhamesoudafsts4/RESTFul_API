@@ -21,7 +21,8 @@ cd Challenge_ML
 activate venv_a or just install requirements.txt
 py app.py
 http://127.0.0.1:5000/
-![Project Screenshot](https://github.com/ilhamesoudafsts4/RESTFul_API/assets/5c851cd0-2b97-4f32-a143-1691ce36ed78)
+![image](https://github.com/ilhamesoudafsts4/RESTFul_API/assets/254e30e0-0021-4d8f-9b9a-e2b0486b4868)
+
 
 
 
